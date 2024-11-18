@@ -18,10 +18,10 @@ export default async function ProjectsPage() {
   // Fetch the projects if they exist
   const featured = allProjects
     .filter((p) => p.published)
-    .find((project) => project.slug === "example1");
+    .find((project) => project.slug === "example2");
   const top2 = allProjects
     .filter((p) => p.published)
-    .find((project) => project.slug === "example2");
+    .find((project) => project.slug === "example1");
   const top3 = allProjects
     .filter((p) => p.published)
     .find((project) => project.slug === "example3");
