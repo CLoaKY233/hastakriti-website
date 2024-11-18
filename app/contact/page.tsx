@@ -1,27 +1,27 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
   {
-    icon: <Twitter size={20} />,
-    href: "https://github.com/arpy8/Team-Hastakriti",
-    label: "Github",
-    handle: "Team-Hastakriti",
+    icon: <Linkedin size={20} />,
+    href: "https://linkedin.com/in/cloaky233",
+    label: "LinkedIn",
+    handle: "cloaky233",
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:laysheth1@icloud.com",
+    href: "mailto:cloak2k4@gmail.com",
     label: "Email",
-    handle: "laysheth@icloud.com",
+    handle: "cloak2k4@gmail.com",
   },
   {
     icon: <Github size={20} />,
-    href: "https://github.com/arpy8/Team-Hastakriti",
+    href: "https://github.com/cloaky233",
     label: "Github",
-    handle: "arpy8",
+    handle: "cloaky233",
   },
 ];
 
