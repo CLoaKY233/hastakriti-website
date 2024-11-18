@@ -64,7 +64,7 @@ const syncContentFromGit = async (contentDir) => {
     if (wasCancelled) return;
 
     // Sync every 5 minutes
-    syncInterval = setTimeout(syncLoop, 1000 * 60 * 5);
+    syncInterval = setTimeout(syncLoop, 1000 * 40);
   };
 
   await syncLoop();
