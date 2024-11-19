@@ -4,7 +4,7 @@ import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
-
+import { topProjectSlugs } from "../../constants/constants";
 // import { Eye } from "lucide-react";
 
 export const revalidate = 60;
@@ -18,13 +18,13 @@ export default async function ProjectsPage() {
   // Fetch the projects if they exist
   const featured = allProjects
     .filter((p) => p.published)
-    .find((project) => project.slug === "example2");
+    .find((project) => project.slug === topProjectSlugs.featured);
   const top2 = allProjects
     .filter((p) => p.published)
-    .find((project) => project.slug === "example1");
+    .find((project) => project.slug === topProjectSlugs.top2);
   const top3 = allProjects
     .filter((p) => p.published)
-    .find((project) => project.slug === "example3");
+    .find((project) => project.slug === topProjectSlugs.top3);
 
   // Exclude the featured, top2, and top3 projects from the sorted list
   const excludedSlugs = [featured?.slug, top2?.slug, top3?.slug].filter(
